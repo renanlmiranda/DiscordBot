@@ -1,6 +1,7 @@
 const { Client, MessageEmbed } = require('discord.js');
 const moment = require('moment');
-const { prefix, token } = require('./config.json');
+const { prefix } = require('./config.json');
+const { token } = require('./config');
 
 const atualDate = moment().subtract(10, 'days').calendar();
 const bot = new Client();
